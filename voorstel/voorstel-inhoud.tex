@@ -3,37 +3,27 @@
 \section{Introductie}%
 \label{sec:introductie}
 
-Waarover zal je bachelorproef gaan? Introduceer het thema en zorg dat volgende zaken zeker duidelijk aanwezig zijn:
+Het dataportaal ScheldeMonitor \footnote{https://www.scheldemonitor.org/nl} probeert alle wetenschappelijke data en informatie van het 
+Schelde- estuarium op één plaats samen te brengen. Deze data wordt verzameld door verschillende monitoringprogramma's van verscheidene bronnen. De data bestaat uit variërende gegevens over troebelheid, nutriënten, verontreinigende stoffen en verschillende fysische parameters. Al deze parameters worden echter sterk beïnvloed door menselijke activiteiten zoals baggeren en scheepvaart. Het zou dus een grote toegevoegde waarde zijn om ook de data over deze menselijke activiteiten in het portaal op te nemen.
 
-\begin{itemize}
-  \item kaderen thema
-  \item de doelgroep
-  \item de probleemstelling en (centrale) onderzoeksvraag
-  \item de onderzoeksdoelstelling
-\end{itemize}
+Scheepvaartdata is al gestandaardiseerd en kan vrij goed worden vastgelegd via een AIS-platform. Baggergegevens zijn echter nog nooit gestroomlijnd geweest voor de Schelde. Informatie over de locatie, het soort activiteit, de hoeveelheid gebaggerd materiaal en andere data worden gemeten en vastgelegd door verschillende aanbieders. Dit zijn vaak particuliere aannemers. Het resulteert hiervan is dat er een overvloed van verschillende formaten en databestanden aanwezig zijn. Deze worden voor het overgrote deel opgeslagen in interne systemen van het verantwoordelijke bestuursinstituut. Toegang tot of verstrekking van deze bestanden is alleen mogelijk via handmatige aanvragen.
 
-Denk er aan: een typische bachelorproef is \textit{toegepast onderzoek}, wat betekent dat je start vanuit een concrete probleemsituatie in bedrijfscontext, een \textbf{casus}. Het is belangrijk om je onderwerp goed af te bakenen: je gaat voor die \textit{ene specifieke probleemsituatie} op zoek naar een goede oplossing, op basis van de huidige kennis in het vakgebied.
-
-De doelgroep moet ook concreet en duidelijk zijn, dus geen algemene of vaag gedefinieerde groepen zoals \emph{bedrijven}, \emph{developers}, \emph{Vlamingen}, enz. Je richt je in elk geval op it-professionals, een bachelorproef is geen populariserende tekst. Eén specifiek bedrijf (die te maken hebben met een concrete probleemsituatie) is dus beter dan \emph{bedrijven} in het algemeen.
-
-Formuleer duidelijk de onderzoeksvraag! De begeleiders lezen nog steeds te veel voorstellen waarin we geen onderzoeksvraag terugvinden.
-
-Schrijf ook iets over de doelstelling. Wat zie je als het concrete eindresultaat van je onderzoek, naast de uitgeschreven scriptie? Is het een proof-of-concept, een rapport met aanbevelingen, \ldots Met welk eindresultaat kan je je bachelorproef als een succes beschouwen?
+Welk uniform bestandsformaat zal het best gebruikt worden om deze data zo vlot mogelijk te implementeren binnen het dataportaal ScheldeMonitor? Tijdens deze thesis zal hiervoor een antwoord gezocht worden zodat VLIZ (Vlaams Instituut voor de Zee) hun portaal kan uitbreiden. Als resultaat zal er dus een uniform dataformaat zijn die voldoet aan FAIR- en open-standaarden en die efficiënt data kan importeren in het datasysteem.
 
 %---------- Stand van zaken ---------------------------------------------------
 
-\section{State-of-the-art}%
+\section{Literatuurstudie}%
 \label{sec:state-of-the-art}
 
-Hier beschrijf je de \emph{state-of-the-art} rondom je gekozen onderzoeksdomein, d.w.z.\ een inleidende, doorlopende tekst over het onderzoeksdomein van je bachelorproef. Je steunt daarbij heel sterk op de professionele \emph{vakliteratuur}, en niet zozeer op populariserende teksten voor een breed publiek. Wat is de huidige stand van zaken in dit domein, en wat zijn nog eventuele open vragen (die misschien de aanleiding waren tot je onderzoeksvraag!)?
+\subsection{VLIZ}
+De creatie van het Vlaams Instituut voor de Zee (VLIZ) had als doel een duidelijk identificeerbaar aanspreekpunt te maken in Vlaanderen \autocite{Mees2012}. Dit zodat de zichtbaarheid van het zeewetenschappelijk onderzoek kon vergroot worden op regionaal en internationaal niveau. Het effectief ontstaan van de organisatie gebeurde op 1 oktober 1999. Dit werd verwezenlijkt door de steun van de Vlaamse Regering, de provincie West-Vlaanderen en het Fonds voor Wetenschappelijk Onderzoek Vlaanderen. Doorheen de jaren groeide VLIZ in haar rol als ondersteunende instantie van het marien wetenschappelijk onderzoek in Vlaanderen. Het doet dit door een variatie van diensten aan te bieden. Wetenschappers hebben zelf soms minder tijd of middelen voor bepaalde onderzoeken uit te voeren die toch belangrijk kunnen zijn. VLIZ kan hier dan het onderzoek op haar nemen. Tegenwoordig zijn de belangrijkste taken van VLIZ de volgende: het beheer van marien wetenschappelijke data en informatie, wetenschapscommunicatie, het vertalen van onderzoeksresultaten naar de overheid en het grote publiek toe, het ondersteunen van wetenschappelijke publicaties, de integratie in internationale netwerken en het organiseren van workshops en symposia.
 
-Je mag de titel van deze sectie ook aanpassen (literatuurstudie, stand van zaken, enz.). Zijn er al gelijkaardige onderzoeken gevoerd? Wat concluderen ze? Wat is het verschil met jouw onderzoek?
+\subsection{de Schelde}
+Een van de actieve onderzoeken van VLIZ is Het Schelde-estuarium. De Schelde heeft heel wat belangrijke functies: water- en sedimentafvoer, scheepvaart, visserij, recreatie en natuurfunctie \autocite{Melrel1992}. Estuaria zijn zeer dynamische en kunnen snel veranderen. Estuaria zijn ook zeer productief en ondersteunen onder andere ook ecosysteemfuncties \autocite{Meire2005}: bio- en geo- chemische kringloop en verplaatsing van nutriënten, beperking van overstromingen, behoud van biodiversiteit en biologische productie. De menselijke invloed op estuaria is daarom ook zeer belangrijk om te controleren. Het Schelde-estuarium, gelegen in het noordwesten van Vlaanderen (België) en het zuidwesten van Nederland, is het benedenstroomse deel van de Schelde. Het totale bekkengebied bedraagt 21 863 vierkante kilometer \autocite{Peeters2015}. Deze oppervlakte is verdeeld over Frankrijk, België en Nederland. Van de bron (Noord-Frankrijk) tot in de monding (Noordzee) heeft de Schelde een lengte van 355 kilometer. Vanaf de grens tussen Vlaanderen en Nederland verbreedt de rivier en ontstaat het brakke estuarium. Dit wordt ook wel de Westerschelde genoemd.
 
-Verwijs bij elke introductie van een term of bewering over het domein naar de vakliteratuur, bijvoorbeeld~\autocite{Hykes2013}! Denk zeker goed na welke werken je refereert en waarom.
-
-Draag zorg voor correcte literatuurverwijzingen! Een bronvermelding hoort thuis \emph{binnen} de zin waar je je op die bron baseert, dus niet er buiten! Maak meteen een verwijzing als je gebruik maakt van een bron. Doe dit dus \emph{niet} aan het einde van een lange paragraaf. Baseer nooit teveel aansluitende tekst op eenzelfde bron.
-
-Als je informatie over bronnen verzamelt in JabRef, zorg er dan voor dat alle nodige info aanwezig is om de bron terug te vinden (zoals uitvoerig besproken in de lessen Research Methods).
+\subsection{data}
+Er zijn heel wat invloeden die een effect kunnen hebben op de Schelde. VLIZ heeft dan ook heel verschillende data uit verschillende bronnen. Het is belangrijk om deze data zo algemeen mogelijk op te stellen en te behouden. Dit zodat er logische conclusies kunnen getrokken worden uit de verschillende data. Als de data niet algemeen is opgesteld, wordt het al een heel stuk moeilijker om data te vergelijken of grafieken op te maken van soortgelijke data. Best practices kunnen hierbij helpen. Er zal gestreefd worden naar FAIR-standaarden (findability, accessibility, interoperability, and reusability). Databronnen worden tegenwoordig met veel verschillende datamodellen opgesteld \autocite{Stupnikov2018}. Enkele voorbeelden van verschillende modellen zijn: het traditioneel relationeel model, het semantische model zoals RDF en OWL en modellen voor
+semi-gestructureerde gegevens zoals NoSQL, XML en JSON. Deze formaten kunnen ook zeer verschillende datamanipulatie opleveren. Het is dus belangrijk om een eenduidig model te gebruiken tijdens het verwerken van data.
 
 % Voor literatuurverwijzingen zijn er twee belangrijke commando's:
 % \autocite{KEY} => (Auteur, jaartal) Gebruik dit als de naam van de auteur
@@ -42,31 +32,21 @@ Als je informatie over bronnen verzamelt in JabRef, zorg er dan voor dat alle no
 %   functie heeft in de zin (bv. ``Uit onderzoek door Doll & Hill (1954) bleek
 %   ...'')
 
-Je mag deze sectie nog verder onderverdelen in subsecties als dit de structuur van de tekst kan verduidelijken.
-
 %---------- Methodologie ------------------------------------------------------
 \section{Methodologie}%
 \label{sec:methodologie}
 
-Hier beschrijf je hoe je van plan bent het onderzoek te voeren. Welke onderzoekstechniek ga je toepassen om elk van je onderzoeksvragen te beantwoorden? Gebruik je hiervoor literatuurstudie, interviews met belanghebbenden (bv.~voor requirements-analyse), experimenten, simulaties, vergelijkende studie, risico-analyse, PoC, \ldots?
+Deel 1 van het onderzoek zal bestaan uit een literatuurstudie over FAIR- en open-standaarden. In dit deel zal er onderzocht worden wat FAIR- en open-standaarden zijn en waarom ze belangrijk zijn. Het ontstaan en de evolutie van deze standaarden zal hier ook besproken worden. Dit zal de basis vormen voor welke bestandsformaten een kandidaat kunnen zijn voor het eindresultaat.
 
-Valt je onderwerp onder één van de typische soorten bachelorproeven die besproken zijn in de lessen Research Methods (bv.\ vergelijkende studie of risico-analyse)? Zorg er dan ook voor dat we duidelijk de verschillende stappen terug vinden die we verwachten in dit soort onderzoek!
+Deel 2 van het onderzoek zal bestaan uit interviews met betrokken personen. Er zullen interviews zijn met de huidige verstrekkers van baggergegevens, de betrokken opdrachtgevers en wetenschappelijke experts. Hier zal duidelijk worden wat de redenen zijn dat deze personen bepaalde bestandsformaten gebruiken.
 
-Vermijd onderzoekstechnieken die geen objectieve, meetbare resultaten kunnen opleveren. Enquêtes, bijvoorbeeld, zijn voor een bachelorproef informatica meestal \textbf{niet geschikt}. De antwoorden zijn eerder meningen dan feiten en in de praktijk blijkt het ook bijzonder moeilijk om voldoende respondenten te vinden. Studenten die een enquête willen voeren, hebben meestal ook geen goede definitie van de populatie, waardoor ook niet kan aangetoond worden dat eventuele resultaten representatief zijn.
-
-Uit dit onderdeel moet duidelijk naar voor komen dat je bachelorproef ook technisch voldoen\-de diepgang zal bevatten. Het zou niet kloppen als een bachelorproef informatica ook door bv.\ een student marketing zou kunnen uitgevoerd worden.
-
-Je beschrijft ook al welke tools (hardware, software, diensten, \ldots) je denkt hiervoor te gebruiken of te ontwikkelen.
-
-Probeer ook een tijdschatting te maken. Hoe lang zal je met elke fase van je onderzoek bezig zijn en wat zijn de concrete \emph{deliverables} in elke fase?
+Deel 3 van het onderzoek zal bestaan uit het implementeren van de data in het datasysteem of een proof-of-concept. In dit deel van het onderzoek zal gekeken worden of de uniforme data effectief implementeerbaar is in het datasysteem. Hierover zal nog uitleg gegeven worden door de verantwoordelijke van het datasysteem.
 
 %---------- Verwachte resultaten ----------------------------------------------
 \section{Verwacht resultaat, conclusie}%
 \label{sec:verwachte_resultaten}
 
-Hier beschrijf je welke resultaten je verwacht. Als je metingen en simulaties uitvoert, kan je hier al mock-ups maken van de grafieken samen met de verwachte conclusies. Benoem zeker al je assen en de onderdelen van de grafiek die je gaat gebruiken. Dit zorgt ervoor dat je concreet weet welk soort data je moet verzamelen en hoe je die moet meten.
+Als eindresultaat zal er dus een uniform dataformaat zijn die voldoet aan FAIR- en open-standaarden en die efficiënt data kan importeren in het datasysteem. Dit dataformaat zal opgedrongen worden aan de verschillende leveranciers en contractanten van VLIZ. Er zal ook gekeken worden of er al een proof-of-concept mogelijk is op basis van dit resultaat.
 
-Wat heeft de doelgroep van je onderzoek aan het resultaat? Op welke manier zorgt jouw bachelorproef voor een meerwaarde?
-
-Hier beschrijf je wat je verwacht uit je onderzoek, met de motivatie waarom. Het is \textbf{niet} erg indien uit je onderzoek andere resultaten en conclusies vloeien dan dat je hier beschrijft: het is dan juist interessant om te onderzoeken waarom jouw hypothesen niet overeenkomen met de resultaten.
+Op basis van deze resultaten zal het mogelijk zijn om data van de menselijke activiteiten in de Schelde op te nemen in het dataportaal ScheldeMonitor.
 
