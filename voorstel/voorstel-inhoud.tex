@@ -22,8 +22,21 @@ De creatie van het Vlaams Instituut voor de Zee (VLIZ) had als doel een duidelij
 Een van de actieve onderzoeken van VLIZ is Het Schelde-estuarium. De Schelde heeft heel wat belangrijke functies: water- en sedimentafvoer, scheepvaart, visserij, recreatie en natuurfunctie \autocite{Melrel1992}. Estuaria zijn zeer dynamische en kunnen snel veranderen. Estuaria zijn ook zeer productief en ondersteunen onder andere ook ecosysteemfuncties \autocite{Meire2005}: bio- en geo- chemische kringloop en verplaatsing van nutriënten, beperking van overstromingen, behoud van biodiversiteit en biologische productie. De menselijke invloed op estuaria is daarom ook zeer belangrijk om te controleren. Het Schelde-estuarium, gelegen in het noordwesten van Vlaanderen (België) en het zuidwesten van Nederland, is het benedenstroomse deel van de Schelde. Het totale bekkengebied bedraagt 21 863 vierkante kilometer \autocite{Peeters2015}. Deze oppervlakte is verdeeld over Frankrijk, België en Nederland. Van de bron (Noord-Frankrijk) tot in de monding (Noordzee) heeft de Schelde een lengte van 355 kilometer. Vanaf de grens tussen Vlaanderen en Nederland verbreedt de rivier en ontstaat het brakke estuarium. Dit wordt ook wel de Westerschelde genoemd.
 
 \subsection{data}
-Er zijn heel wat invloeden die een effect kunnen hebben op de Schelde. VLIZ heeft dan ook heel verschillende data uit verschillende bronnen. Het is belangrijk om deze data zo algemeen mogelijk op te stellen en te behouden. Dit zodat er logische conclusies kunnen getrokken worden uit de verschillende data. Als de data niet algemeen is opgesteld, wordt het al een heel stuk moeilijker om data te vergelijken of grafieken op te maken van soortgelijke data. Best practices kunnen hierbij helpen. Er zal gestreefd worden naar FAIR-standaarden (findability, accessibility, interoperability, and reusability). Databronnen worden tegenwoordig met veel verschillende datamodellen opgesteld \autocite{Stupnikov2018}. Enkele voorbeelden van verschillende modellen zijn: het traditioneel relationeel model, het semantische model zoals RDF en OWL en modellen voor
-semi-gestructureerde gegevens zoals NoSQL, XML en JSON. Deze formaten kunnen ook zeer verschillende datamanipulatie opleveren. Het is dus belangrijk om een eenduidig model te gebruiken tijdens het verwerken van data.
+Er zijn heel wat invloeden die een effect kunnen hebben op de Schelde. VLIZ heeft dan ook heel wat verschillende data uit verschillende bronnen. Het is belangrijk om deze data zo algemeen mogelijk op te stellen en te behouden. Dit zodat er logische conclusies kunnen getrokken worden uit de verschillende data. Als de data niet algemeen is opgesteld, wordt het al een heel stuk moeilijker om data te vergelijken of grafieken op te maken van soortgelijke data. Best practices kunnen hierbij helpen. Er zal gestreefd worden naar FAIR-standaarden (findability, accessibility, interoperability, and reusability). 
+
+Met verschillende gegevensformaten in omloop, kan het kiezen van het juiste gegevensformaat voor opslag echter een uitdaging zijn. Hieronder staan enkele verschillende gegevensformaten die in een database kunnen worden opgeslagen.
+
+\begin{enumerate}
+    \item Gestructureerde gegevens: Deze gegevens zijn zeer georganiseerd en bestaan in een vast formaat \autocite{Dantoni2022}. Het omvat gegevenstypen zoals datums, nummers en tekst. Gestructureerde gegevens zijn gemakkelijk te doorzoeken, filteren en analyseren, waardoor het een populaire keuze is voor database-opslag.
+    
+    \item Ongestructureerde gegevens: Deze gegevens bestaan in een niet-standaard formaat, waardoor het moeilijk te organiseren en doorzoeken is \autocite{IBMCloudEducation2021}. Voorbeelden hiervan zijn video's, afbeeldingen en audiobestanden. Het opslaan van ongestructureerde gegevens kan een uitdaging zijn, maar kan waardevolle inzichten opleveren bij analyse.
+    
+    \item Semi-gestructureerde gegevens: Deze gegevens zijn gedeeltelijk georganiseerd en kunnen in verschillende formaten worden opgeslagen \autocite{ihritik2021}. Voorbeelden hiervan zijn XML-, JSON- en CSV-bestanden. Semi-gestructureerde gegevens kunnen lastig zijn om te beheren, maar kunnen zeer nuttig zijn bij analyse.
+    
+    \item Binaire gegevens: Deze gegevens bestaan uit machinaal leesbare code en omvatten bestanden zoals PDF's en afbeeldingen \autocite{Heddings2018}. Het opslaan van binaire gegevens kan een uitdaging zijn, maar kan zeer waardevol zijn bij analyse.
+    
+    \item Metadata: Deze gegevens bieden informatie over andere gegevens, zoals gegevenstype, auteur en aanmaakdatum  \autocite{TECHOPEDIA2017}. Het is essentieel voor het beheren en analyseren van gegevens.
+\end{enumerate}
 
 % Voor literatuurverwijzingen zijn er twee belangrijke commando's:
 % \autocite{KEY} => (Auteur, jaartal) Gebruik dit als de naam van de auteur
@@ -36,11 +49,11 @@ semi-gestructureerde gegevens zoals NoSQL, XML en JSON. Deze formaten kunnen ook
 \section{Methodologie}%
 \label{sec:methodologie}
 
-Deel 1 van het onderzoek zal bestaan uit een literatuurstudie over FAIR- en open-standaarden. In dit deel zal er onderzocht worden wat FAIR- en open-standaarden zijn en waarom ze belangrijk zijn. Het ontstaan en de evolutie van deze standaarden zal hier ook besproken worden. Dit zal de basis vormen voor welke bestandsformaten een kandidaat kunnen zijn voor het eindresultaat.
+Het onderzoek zal uit drie delen bestaan. In het eerste deel zal een literatuurstudie worden uitgevoerd over FAIR- en open-standaarden, waarbij de nadruk ligt op de verkenning van deze standaarden en de redenen voor hun belang. Ook de ontwikkeling en evolutie van deze standaarden zal worden besproken, als basis voor het bepalen van de bestandsformaten die kunnen worden gebruikt in de uiteindelijke resultaten.
 
-Deel 2 van het onderzoek zal bestaan uit interviews met betrokken personen. Er zullen interviews zijn met de huidige verstrekkers van baggergegevens, de betrokken opdrachtgevers en wetenschappelijke experts. Hier zal duidelijk worden wat de redenen zijn dat deze personen bepaalde bestandsformaten gebruiken.
+Het tweede deel van het onderzoek zal bestaan uit een vergelijkende studie van verschillende dataformaten. Hiervoor zullen interviews gevoerd worden met verschillende belanghebbenden, waaronder huidige verstrekkers van baggergegevens, gerelateerde klanten en wetenschappelijke experts. Dit zal tot doel hebben om de redenen te achterhalen waarom deze individuen specifieke bestandsformaten gebruiken.
 
-Deel 3 van het onderzoek zal bestaan uit het implementeren van de data in het datasysteem of een proof-of-concept. In dit deel van het onderzoek zal gekeken worden of de uniforme data effectief implementeerbaar is in het datasysteem. Hierover zal nog uitleg gegeven worden door de verantwoordelijke van het datasysteem.
+Het derde deel van het onderzoek zal zich richten op de implementatie van de data in het datasysteem of een proof-of-concept. Hierbij zal worden onderzocht of uniforme data effectief geïmplementeerd kan worden in het datasysteem, waarbij input en begeleiding nodig is van de verantwoordelijke partij voor het datasysteem.
 
 %---------- Verwachte resultaten ----------------------------------------------
 \section{Verwacht resultaat, conclusie}%
