@@ -7,11 +7,60 @@
 
 % Pas na deze inleidende paragraaf komt de eerste sectiehoofding.
 
-Dit hoofdstuk bevat je literatuurstudie. De inhoud gaat verder op de inleiding, maar zal het onderwerp van de bachelorproef *diepgaand* uitspitten. De bedoeling is dat de lezer na lezing van dit hoofdstuk helemaal op de hoogte is van de huidige stand van zaken (state-of-the-art) in het onderzoeksdomein. Iemand die niet vertrouwd is met het onderwerp, weet nu voldoende om de rest van het verhaal te kunnen volgen, zonder dat die er nog andere informatie moet over opzoeken \autocite{Pollefliet2011}.
+%Dit hoofdstuk bevat je literatuurstudie. De inhoud gaat verder op de inleiding, maar zal het onderwerp van de bachelorproef *diepgaand* uitspitten. De bedoeling is dat de lezer na lezing van dit hoofdstuk helemaal op de hoogte is van de huidige stand van zaken (state-of-the-art) in het %onderzoeksdomein. Iemand die niet vertrouwd is met het onderwerp, weet nu voldoende om de rest van het verhaal te kunnen volgen, zonder dat die er nog andere informatie moet over opzoeken \autocite{Pollefliet2011}.
 
-Je verwijst bij elke bewering die je doet, vakterm die je introduceert, enz.\ naar je bronnen. In \LaTeX{} kan dat met het commando \texttt{$\backslash${textcite\{\}}} of \texttt{$\backslash${autocite\{\}}}. Als argument van het commando geef je de ``sleutel'' van een ``record'' in een bibliografische databank in het Bib\LaTeX{}-formaat (een tekstbestand). Als je expliciet naar de auteur verwijst in de zin, gebruik je \texttt{$\backslash${}textcite\{\}}.
-Soms wil je de auteur niet expliciet vernoemen, dan gebruik je \texttt{$\backslash${}autocite\{\}}. In de volgende paragraaf een voorbeeld van elk.
+%Je verwijst bij elke bewering die je doet, vakterm die je introduceert, enz.\ naar je bronnen. In \LaTeX{} kan dat met het commando \texttt{$\backslash${textcite\{\}}} of \texttt{$\backslash${autocite\{\}}}. Als argument van het commando geef je de ``sleutel'' van een ``record'' in een bibliografische databank in het Bib\LaTeX{}-formaat (een tekstbestand). Als je expliciet naar de auteur verwijst in de zin, gebruik je \texttt{$\backslash${}textcite\{\}}.
+%Soms wil je de auteur niet expliciet vernoemen, dan gebruik je \texttt{$\backslash${}autocite\{\}}. In de volgende paragraaf een voorbeeld van elk.
 
-\textcite{Knuth1998} schreef een van de standaardwerken over sorteer- en zoekalgoritmen. Experten zijn het erover eens dat cloud computing een interessante opportuniteit vormen, zowel voor gebruikers als voor dienstverleners op vlak van informatietechnologie~\autocite{Creeger2009}.
+%\textcite{Knuth1998} schreef een van de standaardwerken over sorteer- en zoekalgoritmen. Experten zijn het erover eens dat cloud computing een interessante opportuniteit vormen, zowel voor gebruikers als voor dienstverleners op vlak van informatietechnologie~\autocite{Creeger2009}.
 
-\lipsum[7-20]
+
+
+
+
+
+
+
+\section{\IfLanguageName{dutch}{Dataportalen}{Research objective}}%
+\label{sec:Dataportalen}
+
+In deze literatuurstudie worden verschillende dataportals besproken die relevant zijn voor de maritieme industrie. Hierbij wordt gekeken naar hun gegevensbeheer, gegevensverwerking en gestandaardiseerde gegevensformaten. Een aantal van deze dataportals zijn gericht op specifieke regio's, terwijl anderen wereldwijd gegevens beschikbaar stellen.
+
+EMODnet is zo'n dataportal dat zich richt op de Europese wateren en daarbij verschillende datasets aanbiedt die relevant zijn voor onderzoek en toepassingen in de maritieme sector.
+
+Een ander dataportal dat besproken wordt is Marine Cadastre, dat zich richt op de Verenigde Staten en gegevens beschikbaar stelt met betrekking tot offshore-activiteiten en mariene hulpbronnen. Ook hier wordt gekeken naar het gegevensbeheer.
+Daarnaast wordt ook de rol van de U.S. Army Corps of Engineers besproken in het kader van het Dredging Operations Technical Support Program en de beschikbare Dredging Data Extracts. 
+
+Tot slot worden verschillende standaard gegevensformaten besproken, waaronder SeaDataNet, INSPIRE-richtlijn, GeoJSON, NetCDF, IHO S-102, Sensor Observation Service (SOS) en MCP.
+
+\subsection{EMODnet}
+EMODnet is een initiatief van de Europese Commissie. Het doel is om toegang te bieden tot maritieme gegevens van hoge kwaliteit. Het is ook gericht op het integreren en harmoniseren van deze gegevens. Dit is om beleidsmakers, wetenschappers, industrie en burgers te ondersteunen bij het nemen van beslissingen over maritieme zaken. EMODnet richt zich op een breed scala aan maritieme onderwerpen, waaronder mariene biodiversiteit, mariene geologie, fysische oceanografie en menselijke activiteiten.
+
+Met betrekking tot menselijke activiteiten verzamelt en integreert EMODnet gegevens over onder andere scheepvaart, visserij, offshore-energieproductie en maritieme toerisme. Deze gegevens kunnen worden gebruikt voor een breed scala aan toepassingen, zoals maritieme ruimtelijke planning, monitoring van milieueffecten en beheer van maritieme hulpbronnen. Door de beschikbaarheid van deze gegevens te vergroten, draagt EMODnet bij aan een beter begrip en beheer van de impact van menselijke activiteiten op de zeeën en oceanen.
+
+\subsubsection{Gegevensbeheer}
+EMODnet hanteert een gestandaardiseerde aanpak voor gegevensbeheer. Deze aanpak omvat verschillende stappen om ervoor te zorgen dat de gegevens op een consistente en betrouwbare manier worden verzameld, verwerkt en beschikbaar worden gesteld.
+
+De eerste stap is gegevensverzameling. EMODnet verzamelt gegevens uit verschillende bronnen, waaronder nationale en regionale autoriteiten, wetenschappelijke onderzoeksinstellingen en commerciële bedrijven. De gegevens worden verzameld met behulp van verschillende methoden, waaronder satellietbeelden, remote sensing en in situ waarnemingen.
+
+Vervolgens worden de verzamelde gegevens onderworpen aan een reeks verwerkingsstappen om ervoor te zorgen dat ze nauwkeurig, consistent en betrouwbaar zijn. Dit kan onder andere het filteren van onjuiste gegevens, het omzetten van gegevens naar gestandaardiseerde formaten en het integreren van gegevens uit verschillende bronnen omvatten.
+
+De gegevens worden opgeslagen in een gecentraliseerde database die door EMODnet wordt beheerd. Deze database is ontworpen om gemakkelijk toegankelijk te zijn voor gebruikers, met een reeks tools en interfaces om gegevensontdekking, visualisatie en analyse te vergemakkelijken.
+
+Tot slot moedigt EMODnet het delen van gegevens en samenwerking aan tussen haar partners en gebruikers. Het netwerk biedt een scala aan tools en interfaces om gegevensuitwisseling te vergemakkelijken, waaronder gestandaardiseerde gegevensformaten, metadatastandaarden en gegevensontdekkingsportalen. Dankzij de focus van EMODnet op standaardisatie en kwaliteitscontrole zijn de gegevens nuttig voor een breed scala aan toepassingen, waaronder mariene ruimtelijke planning, milieueffectbeoordelingen en het beheer van mariene hulpbronnen.
+
+\subsubsection{Gegevensverweking}
+
+EMODnet gebruikt verschillende stappen om ervoor te zorgen dat de gegevens die het verzamelt en integreert, accuraat en betrouwbaar zijn en gemakkelijk toegankelijk zijn voor gebruikers. Dit omvat het proces van gegevensreiniging waarbij ongeldige of inconsistente gegevenspunten worden geïdentificeerd en verwijderd. Vervolgens worden de gegevens geformatteerd in een gestandaardiseerd formaat, zoals netCDF of CSV, om de consistentie en integratie van de gegevens met andere datasets te vergemakkelijken. EMODnet integreert gegevens van diverse bronnen. Deze bronnen omvatten nationale en regionale autoriteiten, wetenschappelijke onderzoeksinstellingen en commerciële bedrijven. EMODnet controleert deze gegevens op nauwkeurigheid en betrouwbaarheid. Dit doet het door middel van strenge kwaliteitscontrolemaatregelen. Bovendien wordt voor elke dataset metadata gemaakt die gebruikers helpt de gegevens te begrijpen en hun geschiktheid voor specifieke doeleinden te beoordelen. Tenslotte worden de verwerkte gegevens beschikbaar gesteld via verschillende interfaces en tools, zoals gegevensontdekkingsportals, webservices en API's.
+
+\subsubsection{gestandaardiseerde gegevensformaten}
+EMODnet maakt gebruik van verschillende gestandaardiseerde dataformaten, afhankelijk van het type data dat wordt verzameld. Dit omvat SeaDataNet, een formaat voor oceanografische gegevens met gestandaardiseerde variabelen, eenheden en metadatastandaarden. EMODnet houdt zich ook aan de INSPIRE-richtlijn van de Europese Unie voor gegevensinteroperabiliteit en metadata. Voor geografische gegevens gebruikt EMODnet GeoJSON, dat gegevens over bathymetrie, kustlijn en mariene habitats omvat. Daarnaast gebruikt EMODnet NetCDF, een veelgebruikt formaat voor het opslaan van wetenschappelijke gegevens in de oceanografische gemeenschap, voor roostergebaseerde datasets, zoals gegevens over de temperatuur van het zeewater en de stroming van de oceaan. Met deze gestandaardiseerde dataformaten kan EMODnet gegevens verzamelen, verwerken en delen op een nauwkeurige en consistente manier, wat van cruciaal belang is voor het bereiken van haar doelen van mariene ruimtelijke planning, milieueffectbeoordelingen en het beheer van mariene hulpbronnen.
+
+\subsubsection{Data}
+
+\subsection{}
+
+\subsection{}
+
+\section{Standaard gegevensformaten}
+\label{sec:Standaard-gegevensformaten}
